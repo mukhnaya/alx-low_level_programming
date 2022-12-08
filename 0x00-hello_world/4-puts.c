@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /*
- *Print programing is like a multilingual puzzle
+ *main - Print programing is like a multilingual puzzle
  */
 int main(void)
 {
