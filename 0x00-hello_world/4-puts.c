@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*
+/**
  *main - Print programing is like a multilingual puzzle
  */
 int main(void)
