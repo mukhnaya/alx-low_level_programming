@@ -1,8 +1,10 @@
 #include<stdio.h>
 
+/*
+ *Print programing is like a multilingual puzzle
+ */
 int main(void)
 {
-	/* this is the main function */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
