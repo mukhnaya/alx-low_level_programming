@@ -1,6 +1,7 @@
 #include<stdio.h>
 
-/*main - this function prints using printf
+/*
+ * main - this function prints using printf
  *
  *Return: 0 because the return value is not defined
  */
