@@ -1,34 +1,27 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - function as entry point
  *
- * Return: 0 - Returns nothing
+ * Return: 0 - returns nothing
  *
  */
 
 int main(void)
 {
-	int i;
-	int j;
+	int m;
 
-	i = 0;
-	j = 0;
-	while (i <= 9)
+	m = 0;
+	while (m < 10)
 	{
-		while (j <= 9)
+		putchar((m % 10) + '0');
+		if (m == 9)
 		{
-			putchar((i % 10) + '0');
-			putchar((j % 10) + '0');
-
-			if (i == 9 && j == 9)
-			{
-				continue;
-			}
-			putchar(',');
-			putchar(' ');
-			j++;
+			continue;
 		}
-		i++;
+		putchar(',');
+		putchar(' ');
+		m++;
 	}
+	putchar('\n');
 	return (0);
 }
