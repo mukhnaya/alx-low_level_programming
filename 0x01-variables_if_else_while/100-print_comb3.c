@@ -11,24 +11,18 @@ int main(void)
 	int i;
 	int j;
 
-	i = 0;
-	j = 0;
-	while (i <= 9)
+	for (i = 0; i <= 9; i++)
 	{
-		while (j <= 9)
+		for (j = 0; j <= 9; j++)
 		{
 			putchar((i % 10) + '0');
 			putchar((j % 10) + '0');
-
 			if (i == 9 && j == 9)
-			{
 				continue;
-			}
 			putchar(',');
 			putchar(' ');
-			j++;
 		}
-		i++;
 	}
+	putchar('\n');
 	return (0);
 }
