@@ -10,17 +10,13 @@ int main(void)
 {
 	int m;
 
-	m = 0;
-	while (m < 10)
+	for (m = 0; m <= 9; m++)
 	{
 		putchar((m % 10) + '0');
 		if (m == 9)
-		{
 			continue;
-		}
 		putchar(',');
 		putchar(' ');
-		m++;
 	}
 	putchar('\n');
 	return (0);
