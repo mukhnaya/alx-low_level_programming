@@ -7,15 +7,14 @@
 
 int main(void)
 {
-	char k[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a','r'};
-	int n;
-
-	n=0;
-	while (n <= 7)
-	{
-		_putchar(k[n]);
-		n++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
