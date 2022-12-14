@@ -8,8 +8,13 @@
  */
 int print_last_digit(int number)
 {
-	int last;
+	int mwisho;
 
-	last = number % 10;
-	return (last);
+	mwisho = number % 10;
+	if (mwisho < 0)
+	{
+		mwisho *= -1;
+	}
+	_putchar(mwisho + '0');
+	return (mwisho);
 }
