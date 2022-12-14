@@ -4,7 +4,7 @@
  *
  * @number: is the last digit
  *
- * Returns: last value
+ * Return: last value
  */
 int print_last_digit(int number)
 {
