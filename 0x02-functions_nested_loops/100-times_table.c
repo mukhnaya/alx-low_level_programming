@@ -1,6 +1,6 @@
 # include "main.h"
 /**
- * print_times_table
+ * print_times_table - for printing table
  *
  * @n: is the input value
  *
