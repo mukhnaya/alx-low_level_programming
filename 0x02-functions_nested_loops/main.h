@@ -1,1 +1,5 @@
-This is a header file.
+#ifndef moses
+#define moses
+int _putchar(char m)
+
+#endif
