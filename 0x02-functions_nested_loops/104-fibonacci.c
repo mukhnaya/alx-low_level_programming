@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#define LARGEST 10000000000
 /**
  * main - function
  *
@@ -8,29 +9,32 @@
  */
 int main(void)
 {
-	int k = 0;
-	long m;
-	long n;
+	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
+	unsigned long int hold1, hold2, hold3;
+	int count;
 
-	m = 1;
-	n = 2;
-	while (k < 98)
+	printf("%lu, %lu, ", bk1, bk2);
+	for (count = 2; count < 98; count++)
 	{
-		if (k == 0)
+		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
 		{
-			printf("%ld", m);
-		}
-		else if (k == 1)
-		{
-			printf(", %ld", n);
+			hold1 = (bk1 + bk2) / LARGEST;
+			hold2 = (bk1 + bk2) % LARGEST;
+			hold3 = fr1 + fr2 + hold1;
+			fr1 = fr2, fr2 = hold3;
+			bk1 = bk2, bk2 = hold2;
+			bk1 = bk2, bk2 = hold2;
 		}
 		else
 		{
-			n = n + m;
-			m = n - m;
-			printf(", %ld", n);
+			hold2 = bk1 + bk2;
+			bk1 = bk2, bk2 = hold2;
+			printf("%lu", bk2);
 		}
-		++k;
+		if (count != 97)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
