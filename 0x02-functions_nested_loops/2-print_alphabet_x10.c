@@ -9,9 +9,9 @@ void print_alphabet_x10(void)
 	char mimi;
 
 	wewe = 0;
-	mimi = 'a';
 	while (wewe <= 9)
 	{
+		mimi = 'a';
 		while (mimi <= 'z')
 		{
 			_putchar(mimi);
