@@ -11,6 +11,7 @@ void print_alphabet(void)
 	while (mose <= 'z')
 	{
 		_putchar(mose);
+		mose++;
 	}
 	_putchar('\n');
 }
