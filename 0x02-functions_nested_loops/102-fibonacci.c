@@ -26,8 +26,8 @@ int main(void)
 		}
 		else
 		{
-			m = m + n;
-			n = m - n;
+			n = n + m;
+			m = n - m;
 			printf(", %ld", n);
 		}
 		++k;
