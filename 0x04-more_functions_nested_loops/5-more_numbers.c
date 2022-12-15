@@ -15,11 +15,14 @@ void more_numbers(void)
 		pauline = 0;
 		while (pauline < 15)
 		{
-			_putchar(pauline + '0');
+			if (pauline >= 10)
+			{
+				_putchar((pauline / 10) + '0');
+			}
+			_putchar((pauline % 10) + '0');
 			pauline++;
 		}
-		_putchar('\n');
 		mossy++;
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
