@@ -22,7 +22,7 @@ void more_numbers(void)
 			_putchar((pauline % 10) + '0');
 			pauline++;
 		}
-		mossy++;
 		_putchar('\n');
+		mossy++;
 	}
 }
