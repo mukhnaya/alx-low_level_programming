@@ -23,6 +23,6 @@ void print_line(int n)
 			_putchar('_');
 		}
 		p++;
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
