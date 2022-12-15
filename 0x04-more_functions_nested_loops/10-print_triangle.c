@@ -8,23 +8,18 @@
  */
 void print_triangle(int size)
 {
-	int m;
-	int n;
+	int i, j;
 
 	if (size > 0)
 	{
-		for (m = size; m > 0; m--)
+		for (i = size; i > 0; i--)
 		{
-			for (n = 1; n <= size; n++)
+			for (j = 1; j <= size; j++)
 			{
-				if (n >= m)
-				{
+				if (j >= i)
 					_putchar('#');
-				}
 				else
-				{
 					_putchar(' ');
-				}
 			_putchar('\n');
 			}
 		}
