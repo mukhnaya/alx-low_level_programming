@@ -1,18 +1,15 @@
 #include "main.h"
 /**
- * positive_or_negative - pos an neg
- *
- * @i: is the input
+ * main - entry point
  *
  * Return: 0
  *
  */
-void positive_or_negative(int i)
+int main(void)
 {
-	if (i > 0)
-		printf("%d is positive", i);
-	else if (i == 0)
-		printf("%d is zero", i);
-	else
-		printf("%d is negative", i);
+	int i;
+
+	i = 98;main(void)
+	positive_or_negative(i);
+	return (0);
 }
