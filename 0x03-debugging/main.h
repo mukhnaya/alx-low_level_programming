@@ -1,5 +1,5 @@
-#ifndef mose
-#define mose
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 
