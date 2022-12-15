@@ -11,15 +11,15 @@ void print_diagonal(int n)
 	int p;
 	int q;
 
-	if (n <= 0)
+	for (p = 0; p < n; p++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (p = 1; p <= n; p++)
+		if (n <= 0)
 		{
-			for (q = 1; q < p; q++)
+			break;
+		}
+		else
+		{
+			for (q = 0; q < p; q++)
 			{
 				_putchar(' ');
 			}
@@ -27,4 +27,5 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 	}
+	_putchar('\n');
 }
