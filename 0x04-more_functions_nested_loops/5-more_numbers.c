@@ -9,20 +9,17 @@ void more_numbers(void)
 	int mossy;
 	int pauline;
 
-	mossy = 0;
-	while (mossy < 11)
+	for (mossy = 0; mossy < 10; mossy++)
 	{
 		pauline = 0;
-		while (pauline < 15)
+		for (pauline = 0; pauline < 15; pauline++)
 		{
 			if (pauline >= 10)
 			{
 				_putchar((pauline / 10) + '0');
 			}
 			_putchar((pauline % 10) + '0');
-			pauline++;
 		}
-		mossy++;
 		_putchar('\n');
 	}
 }
