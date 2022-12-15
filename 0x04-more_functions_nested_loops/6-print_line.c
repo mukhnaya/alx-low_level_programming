@@ -11,7 +11,7 @@ void print_line(int n)
 	int p;
 
 	p = 0;
-	while (p <= n)
+	while (p < n)
 	{
 		if (n <= 0)
 		{
