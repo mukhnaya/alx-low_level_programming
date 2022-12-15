@@ -20,13 +20,12 @@ void print_diagonal(int n)
 		}
 		else
 		{
-			for (q = 1; q < p; q++)
+			for (q = 1; q <= p; q++)
 			{
 				_putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
-		}
+		}	
 	}
-	_putchar('\n');
 }
