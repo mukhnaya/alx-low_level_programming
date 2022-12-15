@@ -16,6 +16,7 @@ void print_most_numbers(void)
 		{
 			_putchar(mossy + '0');
 		}
+		mossy++;
 	}
 	_putchar('\n');
 }
