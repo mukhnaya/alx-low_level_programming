@@ -9,10 +9,11 @@ int main(void)
 	long p;
 	long  q;
 
-	for (p = 2; p < q; p++)
+	p = 612852475143;
+	for (q = 2; q < p; q++)
 	{
 		while (p % q == 0)
-			q = q / p;
+			p = p / q;
 	}
 	printf("%lu\n", p);
 	return (0);
