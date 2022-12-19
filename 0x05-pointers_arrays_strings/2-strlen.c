@@ -15,9 +15,11 @@ int _strlen(char *s)
 
 	k = 0;
 	mo = s[0];
-	for (f = 1; f != '\0'; mo = s[f++])
+	f = 1;
+	while (mo != '\0')
 	{
 		k++;
+		mo = s[f++];
 	}
 	return (k);
 }
