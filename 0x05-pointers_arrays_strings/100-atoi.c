@@ -8,20 +8,20 @@
  */
 int _atoi(char *s)
 {
-	unsigned int counter, i, j, k, length, num, l;
-	int aux;
+	unsigned int ha, i, j, k, the_length, pau, l;
+	int moseh;
 
-	aux = 1;
-	counter = 0;
-	num = 0;
-	while (*(s + counter) != '\0')
-		counter++;
-	for (i = 0; i < counter; i++)
+	moseh = 1;
+	ha = 0;
+	pau = 0;
+	while (*(s + ha) != '\0')
+		ha++;
+	for (i = 0; i < ha; i++)
 	{
 		if (*(s + i) <= '9' && *(s + i) >= '0')
 			break;
 	}
-	for (j = i; j < counter; j++)
+	for (j = i; j < ha; j++)
 	{
 		if (!(*(s + j) <= '9' && *(s + j) >= '0'))
 			break;
@@ -29,15 +29,15 @@ int _atoi(char *s)
 	for (k = 0; k < i; k++)
 	{
 		if (*(s + k) == '-')
-			aux = -aux;
+			moseh = -moseh;
 	}
-	length = j - i;
+	the_length = j - i;
 	l = i;
-	while (length >= 1)
+	while (the_length >= 1)
 	{
-		num = num * 10 + (*(s + l) - '0');
+		pau = pau * 10 + (*(s + l) - '0');
 		l++;
-		length--;
+		the_length--;
 	}
-	return (num * aux);
+	return (pau * moseh);
 }

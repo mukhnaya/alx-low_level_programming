@@ -9,18 +9,18 @@
  */
 int main(void)
 {
-	int keynumber, symbol, checksum;
+	int start_here, mimi, checking;
 
 	srand(time(NULL));
-	checksum = 2772;
-	keynumber = 0;
-	while (keynumber < (checksum - 122))
+	checking = 2772;
+	start_here = 0;
+	while (start_here < (checking - 122))
 	{
-		symbol = (rand() % (122 - 97 + 1)) + 97;
-		printf("%c", symbol);
-		keynumber = keynumber + symbol;
+		mimi = (rand() % (122 - 97 + 1)) + 97;
+		printf("%c", mimi);
+		start_here = start_here + mimi;
 	}
-	symbol = checksum - keynumber;
-	printf("%c", symbol);
+	mimi = checking - start_here;
+	printf("%c", mimi);
 	return (0);
 }
