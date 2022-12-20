@@ -20,7 +20,7 @@ void print_rev(char *s)
 		counts++;
 		f++;
 	}
-	g = (counts + 1);
+	g = (counts - 1);
 	while (g >= 0)
 	{
 		_putchar(s[g]);
