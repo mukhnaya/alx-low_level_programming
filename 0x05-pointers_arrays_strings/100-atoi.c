@@ -8,26 +8,36 @@
  */
 int _atoi(char *s)
 {
-	int x;
-	int y;
-	int z;
+	unsigned int counter, i, j, k, length, num, l;
+	int aux;
 
-	y = 0;
-	x = 0;
-	for (z = 0; s[z] != '\0'; z++)
+	aux = 1;
+	counter = 0;
+	num = 0;
+	while (*(s + counter) != '\0')
+		counter++;
+	for (i = 0; i < counter; i++)
 	{
-		if (s[z] == '-')
-		{
-			x++;
-		}
-		if (s[z] > 47 && s[z] < 58)
-		{
-			while (s[z] > 47 && s[z] < 58)
-			{
-				y = y * 10 - (s[z++] - 48);
-				break;
-			}
-		}
+		if (*(s + i) <= '9' && *(s + i) >= '0')
+			break;
 	}
-	return (z *= x % 2 == 0 ? -1 : 1);
+	for (j = i; j < counter; j++)
+	{
+		if (!(*(s + j) <= '9' && *(s + j) >= '0'))
+			break;
+	}
+	for (k = 0; k < i; k++)
+	{
+		if (*(s + k) == '-')
+			aux = -aux;
+	}
+	length = j - i;
+	l = i;
+	while (length >= 1)
+	{
+		num = num * 10 + (*(s + l) - '0');
+		l++;
+		length--;
+	}
+	return (num * aux);
 }
