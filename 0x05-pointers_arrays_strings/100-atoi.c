@@ -9,9 +9,9 @@
 int _atoi(char *s)
 {
 	unsigned int ha, i, j, k, the_length, pau, l;
-	int moseh;
+	int counter;
 
-	moseh = 1;
+	counter = 1;
 	ha = 0;
 	pau = 0;
 	while (*(s + ha) != '\0')
@@ -29,7 +29,7 @@ int _atoi(char *s)
 	for (k = 0; k < i; k++)
 	{
 		if (*(s + k) == '-')
-			moseh = -moseh;
+			counter = -counter;
 	}
 	the_length = j - i;
 	l = i;
@@ -39,5 +39,5 @@ int _atoi(char *s)
 		l++;
 		the_length--;
 	}
-	return (pau * moseh);
+	return (pau * counter);
 }
