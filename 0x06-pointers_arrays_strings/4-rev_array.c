@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_array - reversing function
+ * reverse_array - reversing function
  *
  * @a: integer arrays
  * @n: elements swapping
@@ -8,7 +8,7 @@
  * Return: nothing
  *
  */
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int x, y;
 
