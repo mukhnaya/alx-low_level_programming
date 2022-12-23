@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 {
 	int x, y;
 
-	for (x = n - 1; y >= n / 2; y--)
+	for (y = n - 1; y >= n / 2; y--)
 	{
 		x = a[n - 1 - y];
 		a[n - 1 - y] = a[y];
