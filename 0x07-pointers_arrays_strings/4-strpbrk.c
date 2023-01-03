@@ -16,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (s[pau] == accept[mos])
 			{
-				return (s +pau);
+				return (s + pau);
 			}
 		}
 	}
