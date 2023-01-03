@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - function to search a character in a string
  * @s: is string to search from
@@ -18,5 +19,5 @@ char *_strchr(char *s, char c)
 		}
 		e++;
 	}
-	return ('\0');
+	return (NULL);
 }
