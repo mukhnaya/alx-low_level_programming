@@ -7,10 +7,10 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int pau;
-	int mose;
-	int length;
-	int p;
+	unsigned int pau;
+	unsigned int mose;
+	unsigned int length;
+	unsigned int p;
 
 	length = 0;
 	for (pau = 0; accept[pau] != '\0'; pau++)
