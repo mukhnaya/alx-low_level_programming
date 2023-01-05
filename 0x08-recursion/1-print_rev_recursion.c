@@ -22,7 +22,7 @@ void _print_rev_recursion(char *s)
 	{
 		_putchar(s[pau]);
 		pau--;
-		_print_rev_recursion(s);
 	}
+	_print_rev_recursion(s);
 	_putchar('\n');
 }
