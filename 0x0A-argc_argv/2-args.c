@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main: entry point
+ * main -  entry point
  * @argc: to return count of arguments
  * @argv: to return arguments supplied
  *
@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int pau;
 
-	for (pau = 1; pau < argc; pau++)
+	for (pau = 0; pau < argc; pau++)
 	{
 		printf("%s", argv[pau]);
 		printf("\n");
