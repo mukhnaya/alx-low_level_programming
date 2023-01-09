@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	pau = 0;
 	sum = 0;
-	if (argc <= 1)
+	if (argc == 1)
 	{
 		printf("%d", pau);
 		printf("\n");
