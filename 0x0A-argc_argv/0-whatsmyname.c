@@ -11,6 +11,7 @@ int main(__attribute__((unused)) int argc, char *argv[])
 	int pau;
 
 	pau = 0;
-	printf("%s \n", argv[pau]);
+	printf("%s", argv[pau]);
+	printf("\n");
 	return (0);
 }
