@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	char *newstr;
 
 	newstr = (char *) malloc(sizeof(*str));
-	if (str == NULL)
+	if (newstr == NULL)
 	{
 		return (NULL);
 	}
@@ -21,4 +21,5 @@ char *_strdup(char *str)
 		*newstr = *str;
 		return (newstr);
 	}
+	free(newstr);
 }
