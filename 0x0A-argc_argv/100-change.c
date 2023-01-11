@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <cstring.h>
+#include <string.h>
 /**
  * main - entry point
  * @argc: to count arguments supplied
