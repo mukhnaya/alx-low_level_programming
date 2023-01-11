@@ -12,14 +12,18 @@ char *_strdup(char *str)
 {
 	char *newstr;
 
-	newstr = (char *) malloc(sizeof(*str));
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	newstr = (char *) malloc(sizeof(char) * strlen(str) + 1);
 	if (newstr == NULL)
 	{
 		return (NULL);
 	}
 	else
 	{
-		*newstr = *str;
+		strcpy(newstr, str);
 		return (newstr);
 	}
 	free(newstr);
