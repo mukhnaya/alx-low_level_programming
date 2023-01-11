@@ -21,6 +21,6 @@ char *str_concat(char *s1, char *s2)
 	else
 	{
 		s1_s2 = strcat(s1, s2);
-		return (s1_s2);
 	}
+	return (s1_s2);
 }
