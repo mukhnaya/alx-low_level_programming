@@ -4,8 +4,8 @@
 #include <string.h>
 /**
  * alloc_grid - initialize two dimensional array
- * @width: is the size of rows
- * @height: is the size of columns
+ * @width: is the number of rows
+ * @height: is the number of columns
  *
  * Return: pointer
  */
@@ -14,26 +14,39 @@ int **alloc_grid(int width, int height)
 	int **check;
 	int pau;
 	int mos;
+	int jos;
+	int jul;
 
-	if (width == 0 || height == 0)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	check = (int *) malloc(sizeof(int) * width * height);
+	check = malloc(sizeof(int *) * height);
+
 	if (check == NULL)
 	{
+		free(check);
 		return (NULL);
 	}
-	else
+	for (pau = 0; pau < height; pau++)
 	{
-		for (pau = 0; pau < width; pau++)
+		check[pau] = malloc(sizeof(int) * width);
+		if (check[pau] == NULL)
 		{
-			for (mos = 0; mos < height; mos++)
+			for (mos = pau; mos >= 0; mos--)
 			{
-				check[mos][pau] = 0;
+				free(check[mos]);
 			}
+			free(check);
+			return (NULL);
 		}
-		return (check);
 	}
-	free(check);
+	for (jos = 0; jos < height; jos++)
+	{
+		for (jul = 0; jul < width; jul++)
+		{
+			check[jos][jul] = 0;
+		}
+	}
+	return (check);
 }
