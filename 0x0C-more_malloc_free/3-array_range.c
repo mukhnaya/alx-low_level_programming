@@ -7,7 +7,7 @@
  * @min: first number
  * @max: last number
  *
- * Return: 0
+ * Return: range
  */
 int *array_range(int min, int max)
 {
@@ -25,11 +25,9 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	use_get_range = 0;
-	while (use_get_range <= max)
+	for (use_get_range = 0; min <= max; use_get_range++)
 	{
 		int_range[use_get_range] = min++;
-		use_get_range++;
 	}
 	return (int_range);
 }
