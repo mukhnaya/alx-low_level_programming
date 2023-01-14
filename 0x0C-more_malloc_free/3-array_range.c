@@ -25,14 +25,11 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	else
+	use_get_range = 0;
+	while (use_get_range <= max)
 	{
-		use_get_range = 0;
-		while (use_get_range <= max)
-		{
-			int_range[use_get_range] = min++;
-			use_get_range++;
-		}
+		int_range[use_get_range] = min++;
+		use_get_range++;
 	}
 	return (int_range);
 }
