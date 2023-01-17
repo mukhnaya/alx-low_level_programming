@@ -1,0 +1,16 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * init_dog - function
+ * @d: is the struct
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog owner
+ *
+ * Return: nothing
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+
+}
