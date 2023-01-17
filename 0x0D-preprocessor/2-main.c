@@ -1,6 +1,4 @@
-#include "_putchar.c"
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * main - function
  *
