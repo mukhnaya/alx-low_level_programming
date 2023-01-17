@@ -1,3 +1,5 @@
+#ifndef dogy
+#define dogy
 /**
  * struct dog - dog struct
  * @name: name of dog
@@ -6,9 +8,10 @@
  *
  * Description: to hold dog identification details
  */
-typedef struct dog
+struct dog
 {
 	char *name;
 	float *age;
 	char *owner;
-} doggy;
+};
+#endif
