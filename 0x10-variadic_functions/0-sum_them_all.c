@@ -30,6 +30,6 @@ int sum_them_all(const unsigned int n, ...)
 		pau++;
 	}
 	va_end(val_list);
-	_putchar('\n');
+	putchar('\n');
 	return (add);
 }
