@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * size_t print_list - to return elements of list
+ * print_list - to return elements of list
  * @h: head of the linked list
  * Return: number of nodes
  */
