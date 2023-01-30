@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		{
 			printf("[%d] %s\n", mos->len, mos->str);
 		}
-		mos = mose->next;
+		mos = mos->next;
 		pau++;
 	}
 	return (pau);
