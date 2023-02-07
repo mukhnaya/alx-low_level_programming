@@ -3,7 +3,7 @@
  * get_bit - return bit at index
  * @n: is the integer value
  * @index: the index
- * Retunr: bit value
+ * Return: bit value
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
