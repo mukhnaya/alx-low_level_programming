@@ -8,7 +8,7 @@
 #include <stddef.h>
 #include <string.h>
 /**
- * int create_file - creates a file
+ * create_file - creates a file
  * @filename: is the file name
  * @text_content: text to write to file
  * Return: created file with content
