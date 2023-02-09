@@ -13,12 +13,12 @@
  * @letters: number of characters to be printed
  * Return: the text file
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+unsigned int read_textfile(const char *filename, unsigned int letters)
 {
 	int pau;
-	ssize_t read_file;
-	ssize_t write_file;
-	ssize_t close_file;
+	int read_file;
+	int write_file;
+	int close_file;
 	char *text_data;
 
 	if (filename == NULL)
