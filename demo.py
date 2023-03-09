@@ -1,1 +1,0 @@
-print ("Is a programmer")
