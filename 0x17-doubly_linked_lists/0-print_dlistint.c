@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -13,8 +13,8 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (h != NULL)
 	{
-		print("%d", h->n);
-		ptr->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		nodes_n++;
 	}
 	return (nodes_n);
