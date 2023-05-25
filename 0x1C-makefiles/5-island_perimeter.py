@@ -15,5 +15,5 @@ def island_perimeter(grid):
                 if (mos > 0 and grid[mos - 1][pau] == 1):
                     size -= 2
                 if (pau > 0 and grid[mos][pau - 1] == 1):
-                        size -= 2
+                    size -= 2
     return size
